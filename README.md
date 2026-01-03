@@ -7,15 +7,15 @@ L'objectif est de quantifier l'impact de diverses caractéristiques (surface, lo
 
 ## 🚀 Résultats Principaux
 **Surface Habitable** : C'est le moteur prédominant, expliquant plus de 68% de la variance des prix. Chaque mètre carré supplémentaire génère une augmentation de 0,21% du prix dans le modèle optimal.
-**Localisation** : Chaque kilomètre d'éloignement du centre-ville réduit le prix de 6 140 € en moyenne.
-**Équipements** : La présence d'un ascenseur augmente la valeur du bien de 55 510 € par rapport à un bien identique sans cet équipement.
-**Socio-économie** : L'intégration du revenu médian du quartier et de la qualité des écoles a porté la précision du modèle à 84%.
+* **Localisation** : Chaque kilomètre d'éloignement du centre-ville réduit le prix de 6 140 € en moyenne.
+* **Équipements** : La présence d'un ascenseur augmente la valeur du bien de 55 510 € par rapport à un bien identique sans cet équipement.
+* **Socio-économie** : L'intégration du revenu médian du quartier et de la qualité des écoles a porté la précision du modèle à 84%.
 
 
 ## 🛠️ Méthodologie Économétrique
 ### 1. Modélisation de référence
-**MCO (Moindres Carrés Ordinaires)** : Utilisation de modèles linéaires simples et multiples.
-**Modèle Semi-Logarithmique** : Identifié comme le plus robuste statistiquement avec un $R^2$ ajusté de 79,2%.
+* **MCO (Moindres Carrés Ordinaires)** : Utilisation de modèles linéaires simples et multiples.
+* **Modèle Semi-Logarithmique** : Identifié comme le plus robuste statistiquement avec un $R^2$ ajusté de 79,2%.
 
 ### 2. Traitement de l'Endogénéité
 [cite_start]Pour corriger le biais lié à la variable "Qualité des écoles", la méthode des **Variables Instrumentales (2SLS)** a été appliquée en utilisant la "Distance à l'université" comme instrument[cite: 16, 31]. 
