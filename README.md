@@ -1,21 +1,21 @@
 # Analyse des Prix Immobiliers : Projet d'Économétrie Appliquée
 
-[cite_start]Ce projet, réalisé dans le cadre du cursus à l'**Université Paris 1 Panthéon-Sorbonne**, analyse les déterminants des prix immobiliers sur un échantillon de 150 maisons vendues entre 2015 et 2023[cite: 1, 2, 7, 9].
+Ce projet analyse les déterminants des prix immobiliers sur un échantillon de 150 maisons vendues entre 2015 et 2023.
 
 ## 📋 Résumé du projet
-[cite_start]L'objectif est de quantifier l'impact de diverses caractéristiques (surface, localisation, équipements) sur la valeur marchande en utilisant des méthodes allant de la régression linéaire simple aux techniques de régularisation et de variables instrumentales[cite: 9].
+L'objectif est de quantifier l'impact de diverses caractéristiques (surface, localisation, équipements) sur la valeur marchande en utilisant des méthodes allant de la régression linéaire simple aux techniques de régularisation et de variables instrumentales.
 
 ## 🚀 Résultats Principaux
-* [cite_start]**Surface Habitable** : C'est le moteur prédominant, expliquant plus de 68% de la variance des prix[cite: 10]. [cite_start]Chaque mètre carré supplémentaire génère une augmentation de 0,21% du prix dans le modèle optimal[cite: 12].
-* [cite_start]**Localisation** : Chaque kilomètre d'éloignement du centre-ville réduit le prix de 6 140 € en moyenne[cite: 199].
-* [cite_start]**Équipements** : La présence d'un ascenseur augmente la valeur du bien de 55 510 € par rapport à un bien identique sans cet équipement[cite: 202].
-* [cite_start]**Socio-économie** : L'intégration du revenu médian du quartier et de la qualité des écoles a porté la précision du modèle à 84%[cite: 14].
+**Surface Habitable** : C'est le moteur prédominant, expliquant plus de 68% de la variance des prix. Chaque mètre carré supplémentaire génère une augmentation de 0,21% du prix dans le modèle optimal.
+**Localisation** : Chaque kilomètre d'éloignement du centre-ville réduit le prix de 6 140 € en moyenne.
+**Équipements** : La présence d'un ascenseur augmente la valeur du bien de 55 510 € par rapport à un bien identique sans cet équipement.
+**Socio-économie** : L'intégration du revenu médian du quartier et de la qualité des écoles a porté la précision du modèle à 84%.
 
 
 ## 🛠️ Méthodologie Économétrique
 ### 1. Modélisation de référence
-* [cite_start]**MCO (Moindres Carrés Ordinaires)** : Utilisation de modèles linéaires simples et multiples[cite: 29].
-* [cite_start]**Modèle Semi-Logarithmique** : Identifié comme le plus robuste statistiquement avec un $R^2$ ajusté de 79,2%[cite: 11].
+**MCO (Moindres Carrés Ordinaires)** : Utilisation de modèles linéaires simples et multiples.
+**Modèle Semi-Logarithmique** : Identifié comme le plus robuste statistiquement avec un $R^2$ ajusté de 79,2%.
 
 ### 2. Traitement de l'Endogénéité
 [cite_start]Pour corriger le biais lié à la variable "Qualité des écoles", la méthode des **Variables Instrumentales (2SLS)** a été appliquée en utilisant la "Distance à l'université" comme instrument[cite: 16, 31]. 
