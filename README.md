@@ -1,99 +1,41 @@
-Analyse des Déterminants des Prix Immobiliers (2015-2023)
-Ce projet présente une analyse économétrique approfondie des facteurs influençant la valeur des biens immobiliers, basée sur un échantillon de 150 transactions réalisées entre 2015 et 2023. L'étude utilise diverses techniques de modélisation, allant de la régression linéaire simple aux méthodes de régularisation et aux variables instrumentales.
+# Analyse des Prix Immobiliers : Projet d'Économétrie Appliquée
 
-📋 Résumé du Projet
-L'objectif est de quantifier précisément l'impact de chaque caractéristique (physique, géographique et socio-économique) sur le prix de vente. L'étude démontre que si la surface reste le moteur principal de la valeur, l'environnement socio-économique (notamment le revenu du quartier) joue un rôle crucial une fois les biais statistiques corrigés.
+[cite_start]Ce projet, réalisé dans le cadre du cursus à l'**Université Paris 1 Panthéon-Sorbonne**, analyse les déterminants des prix immobiliers sur un échantillon de 150 maisons vendues entre 2015 et 2023[cite: 1, 2, 7, 9].
 
-🛠️ Méthodologie et Modèles
-Le projet suit une démarche progressive pour assurer la robustesse des résultats :
-Régression Linéaire (MCO) : Modèles simple et multiple pour établir les fondamentaux du marché.
-Transformations Fonctionnelles : Comparaison entre modèles linéaire, semi-logarithmique et log-log. 
-Le modèle semi-logarithmique a été retenu comme optimal ($R^2$ ajusté de 79,2%).
-Traitement de l'Endogénéité : Utilisation de la méthode des Variables Instrumentales (2SLS) avec la "Distance à l'université" comme instrument pour corriger le biais lié à la "Qualité des écoles".
-Régularisation (Machine Learning) : Application de Ridge et Lasso pour traiter la multicolinéarité et améliorer la performance prédictive.
+## 📋 Résumé du projet
+[cite_start]L'objectif est de quantifier l'impact de diverses caractéristiques (surface, localisation, équipements) sur la valeur marchande en utilisant des méthodes allant de la régression linéaire simple aux techniques de régularisation et de variables instrumentales[cite: 9].
 
-📈 Résultats Clés
-
-Impact de la surface : Chaque mètre carré supplémentaire augmente le prix de 0,21% (modèle semi-log) ou environ 5 040 € (modèle linéaire).
+## 🚀 Résultats Principaux
+* [cite_start]**Surface Habitable** : C'est le moteur prédominant, expliquant plus de 68% de la variance des prix[cite: 10]. [cite_start]Chaque mètre carré supplémentaire génère une augmentation de 0,21% du prix dans le modèle optimal[cite: 12].
+* [cite_start]**Localisation** : Chaque kilomètre d'éloignement du centre-ville réduit le prix de 6 140 € en moyenne[cite: 199].
+* [cite_start]**Équipements** : La présence d'un ascenseur augmente la valeur du bien de 55 510 € par rapport à un bien identique sans cet équipement[cite: 202].
+* [cite_start]**Socio-économie** : L'intégration du revenu médian du quartier et de la qualité des écoles a porté la précision du modèle à 84%[cite: 14].
 
 
+## 🛠️ Méthodologie Économétrique
+### 1. Modélisation de référence
+* [cite_start]**MCO (Moindres Carrés Ordinaires)** : Utilisation de modèles linéaires simples et multiples[cite: 29].
+* [cite_start]**Modèle Semi-Logarithmique** : Identifié comme le plus robuste statistiquement avec un $R^2$ ajusté de 79,2%[cite: 11].
 
-Variables de confort : La présence d'un ascenseur valorise le bien de 2,65% en moyenne.
+### 2. Traitement de l'Endogénéité
+[cite_start]Pour corriger le biais lié à la variable "Qualité des écoles", la méthode des **Variables Instrumentales (2SLS)** a été appliquée en utilisant la "Distance à l'université" comme instrument[cite: 16, 31]. 
+* **Découverte majeure** : Le modèle MCO surestimait l'impact de l'école. [cite_start]En réalité, la valorisation est davantage portée par le revenu moyen des résidents que par la proximité immédiate d'une école réputée[cite: 18, 510].
 
+### 3. Régularisation (Machine Learning)
+[cite_start]Comparaison des méthodes pour optimiser la prédiction sur de nouvelles données[cite: 33]:
+* [cite_start]**Ridge** : Meilleure performance avec un RMSE de 0,04388[cite: 584, 597].
+* [cite_start]**Lasso** : Moins performant (RMSE de 0,04946) en raison d'une suppression trop drastique de variables secondaires utiles[cite: 585, 601].
 
-Localisation : Chaque kilomètre d'éloignement du centre-ville réduit le prix de 0,30%.
+## 📊 Statistiques Descriptives
+| Variable | Moyenne | Médiane | Écart-type |
+| :--- | :--- | :--- | :--- |
+| **Prix (milliers €)** | 2 107,9 | 2 105,05 | 229,92 |
+| **Surface (m²)** | 116,71 | 117,84 | 37,69 |
+| **Distance Centre (km)** | 16,5 | 16,87 | 9,02 |
 
+[cite_start]*Données extraites des statistiques descriptives de l'échantillon[cite: 45].*
 
-Causalité vs Corrélation : L'analyse IV révèle que le revenu médian du quartier est un prédicteur de valeur plus fiable que la seule réputation des écoles, cette dernière étant souvent un biais de richesse du quartier.
-
-
-
-Performance Prédictive : Le modèle Ridge obtient le meilleur score de généralisation avec un RMSE de 0,04388.
-
-📊 Statistiques Descriptives (Échantillon)
-
-Variable,Moyenne,Médiane
-Prix (k€),"2 107,9","2 105,05"
-Surface (m²),"116,71","117,84"
-Année de construction,2001,2002
-Distance Centre (km),"16,5","16,87"
-Revenu Médian (k€),"63,67","63,45"
-
-
-Voici une proposition de README.md structurée et professionnelle, prête à être copiée-collée sur votre dépôt GitHub. Elle synthétise l'ensemble de votre étude économétrique réalisée à l'Université Paris 1 Panthéon-Sorbonne.
-
-Analyse des Déterminants des Prix Immobiliers (2015-2023)
-Ce projet présente une analyse économétrique approfondie des facteurs influençant la valeur des biens immobiliers, basée sur un échantillon de 150 transactions réalisées entre 2015 et 2023. L'étude utilise diverses techniques de modélisation, allant de la régression linéaire simple aux méthodes de régularisation et aux variables instrumentales.
-
-📋 Résumé du Projet
-L'objectif est de quantifier précisément l'impact de chaque caractéristique (physique, géographique et socio-économique) sur le prix de vente. L'étude démontre que si la surface reste le moteur principal de la valeur, l'environnement socio-économique (notamment le revenu du quartier) joue un rôle crucial une fois les biais statistiques corrigés.
-
-🛠️ Méthodologie et Modèles
-Le projet suit une démarche progressive pour assurer la robustesse des résultats :
-
-
-Régression Linéaire (MCO) : Modèles simple et multiple pour établir les fondamentaux du marché.
-
-
-Transformations Fonctionnelles : Comparaison entre modèles linéaire, semi-logarithmique et log-log. Le modèle semi-logarithmique a été retenu comme optimal (R 
-2
-  ajusté de 79,2%).
-
-
-Traitement de l'Endogénéité : Utilisation de la méthode des Variables Instrumentales (2SLS) avec la "Distance à l'université" comme instrument pour corriger le biais lié à la "Qualité des écoles".
-
-
-Régularisation (Machine Learning) : Application de Ridge et Lasso pour traiter la multicolinéarité et améliorer la performance prédictive.
-
-📈 Résultats Clés
-
-Impact de la surface : Chaque mètre carré supplémentaire augmente le prix de 0,21% (modèle semi-log) ou environ 5 040 € (modèle linéaire).
-
-
-Variables de confort : La présence d'un ascenseur valorise le bien de 2,65% en moyenne.
-
-
-Localisation : Chaque kilomètre d'éloignement du centre-ville réduit le prix de 0,30%.
-
-
-Causalité vs Corrélation : L'analyse IV révèle que le revenu médian du quartier est un prédicteur de valeur plus fiable que la seule réputation des écoles, cette dernière étant souvent un biais de richesse du quartier.
-
-
-Performance Prédictive : Le modèle Ridge obtient le meilleur score de généralisation avec un RMSE de 0,04388.
-
-📊 Statistiques Descriptives (Échantillon)
-Variable	Moyenne	Médiane
-Prix (k€)	2 107,9	2 105,05
-Surface (m²)	116,71	117,84
-Année de construction	2001	2002
-Distance Centre (km)	16,5	16,87
-Revenu Médian (k€)	63,67	63,45
-
-Source : Tableau 1 du rapport.
-
-🚀 Conclusions Pratiques
-Pour une évaluation immobilière précise, il est recommandé de privilégier une approche multidimensionnelle via un modèle semi-logarithmique régularisé par Ridge. Cette méthode offre le meilleur équilibre entre pouvoir explicatif et capacité de prédiction sur de nouvelles données.
-
-Auteurs : Elodie NGIRABANZI & Imane MAHAMANE OUSMANE MAIGA 
-
-Institution : Université Paris 1 Panthéon-Sorbonne
+## 🎓 Auteurs
+* [cite_start]**NGIRABANZI Elodie** [cite: 5]
+* [cite_start]**MAHAMANE OUSMANE MAIGA Imane** [cite: 6]
+* [cite_start]**Université Paris 1 Panthéon-Sorbonne**, 31 Décembre 2025 [cite: 1, 7]
