@@ -18,13 +18,13 @@ L'objectif est de quantifier l'impact de diverses caractéristiques (surface, lo
 * **Modèle Semi-Logarithmique** : Identifié comme le plus robuste statistiquement avec un $R^2$ ajusté de 79,2%.
 
 ### 2. Traitement de l'Endogénéité
-[cite_start]Pour corriger le biais lié à la variable "Qualité des écoles", la méthode des **Variables Instrumentales (2SLS)** a été appliquée en utilisant la "Distance à l'université" comme instrument[cite: 16, 31]. 
-* **Découverte majeure** : Le modèle MCO surestimait l'impact de l'école. [cite_start]En réalité, la valorisation est davantage portée par le revenu moyen des résidents que par la proximité immédiate d'une école réputée[cite: 18, 510].
+Pour corriger le biais lié à la variable "Qualité des écoles", la méthode des **Variables Instrumentales (2SLS)** a été appliquée en utilisant la "Distance à l'université" comme instrument. 
+* **Découverte majeure** : Le modèle MCO surestimait l'impact de l'école. En réalité, la valorisation est davantage portée par le revenu moyen des résidents que par la proximité immédiate d'une école réputée.
 
 ### 3. Régularisation (Machine Learning)
-[cite_start]Comparaison des méthodes pour optimiser la prédiction sur de nouvelles données[cite: 33]:
-* [cite_start]**Ridge** : Meilleure performance avec un RMSE de 0,04388[cite: 584, 597].
-* [cite_start]**Lasso** : Moins performant (RMSE de 0,04946) en raison d'une suppression trop drastique de variables secondaires utiles[cite: 585, 601].
+Comparaison des méthodes pour optimiser la prédiction sur de nouvelles données:
+* **Ridge** : Meilleure performance avec un RMSE de 0,04388.
+* **Lasso** : Moins performant (RMSE de 0,04946) en raison d'une suppression trop drastique de variables secondaires utiles.
 
 ## 📊 Statistiques Descriptives
 | Variable | Moyenne | Médiane | Écart-type |
@@ -33,9 +33,9 @@ L'objectif est de quantifier l'impact de diverses caractéristiques (surface, lo
 | **Surface (m²)** | 116,71 | 117,84 | 37,69 |
 | **Distance Centre (km)** | 16,5 | 16,87 | 9,02 |
 
-[cite_start]*Données extraites des statistiques descriptives de l'échantillon[cite: 45].*
+*Données extraites des statistiques descriptives de l'échantillon.*
 
 ## 🎓 Auteurs
-* [cite_start]**NGIRABANZI Elodie** [cite: 5]
-* [cite_start]**MAHAMANE OUSMANE MAIGA Imane** [cite: 6]
-* [cite_start]**Université Paris 1 Panthéon-Sorbonne**, 31 Décembre 2025 [cite: 1, 7]
+* **NGIRABANZI Elodie** 
+* **MAHAMANE OUSMANE MAIGA Imane**
+* **Université Paris 1 Panthéon-Sorbonne**, 31 Décembre 2025
